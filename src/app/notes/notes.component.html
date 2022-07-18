@@ -1,29 +1,16 @@
 <div class="example-container">
     <mat-form-field>
-
         <input matInput [(ngModel)]="titleModel" placeholder="Title">
     </mat-form-field>
     <br>
-
     <mat-form-field>
-
         <input matInput [(ngModel)]="contentModel" placeholder="Enter your content">
     </mat-form-field>
-    <br>
-
-    <mat-form-field>
-
-        <input matInput [(ngModel)]="todoModel" placeholder="What to do">
-    </mat-form-field>
-
 </div>
-
 <br>
-
 <button mat-raised-button color="accent" (click)="createNotes()"> Add Note</button>
-
 <hr>
-
 <p *ngFor="let i of notes">
     <mat-card-title> {{ i.title }} </mat-card-title>
     <mat-card> {{ i.content }} </mat-card>
+</p>

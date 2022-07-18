@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NotesComponent } from './notes/notes.component';
 
 @Component({
   selector: 'app-root',
